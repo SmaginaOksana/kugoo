@@ -1,0 +1,58 @@
+@import "tailwindcss";
+@import "./customClasses/customClasses.css";
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #171717;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: #0a0a0a;
+      --foreground: #ededed;
+    }
+  }
+
+  * {
+    @apply box-border m-0 p-0;
+  }
+
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-roboto);
+  }
+
+  h1 {
+    font-size: var(--text-2xl);
+    /* font-family: var(--font-jost); */
+  }
+  h2 {
+    font-size: var(--text-xl);
+  }
+}
+
+@theme {
+  --font-roboto: "Roboto", sans-serif;
+  --font-jost: "Jost", sans-serif;
+  --font-sf-text: "SF Pro Text", sans-serif;
+  --font-sf-display: "SF Pro Display", sans-serif;
+  --breakpoint-3xl: 1920px;
+  --color-avocado-100: oklch(0.99 0 0);
+  --color-avocado-200: oklch(0.98 0.04 113.22);
+  --color-avocado-300: oklch(0.94 0.11 115.03);
+  --color-avocado-400: oklch(0.92 0.19 114.08);
+  --color-avocado-500: oklch(0.84 0.18 117.33);
+  --color-avocado-600: oklch(0.53 0.12 118.34);
+  --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
+  --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
+  /* ... */
+}
+/* @font-face {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url("/fonts/Oswald.woff2") format("woff2");
+} */
