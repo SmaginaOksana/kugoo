@@ -1,9 +1,29 @@
 @layer components {
-  .btn-custom {
-    @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+  .btn-purple {
+    @apply font-jost bg-purple rounded-sm-5 text-white border border-solid border-white;
   }
-
-  .no-scrollbar_custom::-webkit-scrollbar {
-    display: none;
+  .btn-white {
+    @apply font-jost bg-white rounded-sm-5 text-purple border border-solid border-purple;
+  }
+  .btn-orange {
+    @apply font-jost bg-orange rounded-sm-5 text-white border border-solid border-white;
+  }
+  .btn-youtube {
+    @apply font-jost font-medium text-sm text-white rounded-sm-5 bg-red-youtube;
+  }
+  .btn-vk {
+    @apply font-jost font-medium text-sm text-white rounded-sm-5 bg-blue-vk;
+  }
+  .btn-telegram {
+    @apply font-jost font-medium text-sm text-white rounded-sm-5 bg-blue-telegram;
+  }
+  .btn-instagram {
+    @apply font-jost font-medium text-sm text-white rounded-sm-5 bg-linear-to-tr from-yellow-gr from-0% via-red-gr via-51% to-purple-gr to-99%;
+  }
+  .btn-play-white {
+    @apply bg-white;
+  }
+  .btn-play-purple {
+    @apply bg-purple;
   }
 }
