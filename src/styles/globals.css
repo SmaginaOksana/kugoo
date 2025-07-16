@@ -1,5 +1,5 @@
 @import "tailwindcss";
-/* @import "./customClasses/customClasses.css"; */
+@import "./customClasses/customClasses.css";
 
 @layer base {
   :root {

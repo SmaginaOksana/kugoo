@@ -1,4 +1,6 @@
 import Footer from "../components/Footer/Footer";
+import Button from "../components/common/Button/Button";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -23,23 +25,12 @@ export default function Home() {
           </li>
         </ol>
       </main>
-      <Footer />
-      <div className="container">
-        <div className="flex flex-col @2xl:flex-row">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias
-            veritatis quod tempore animi dolorem doloremque sequi esse
-            perferendis, fuga dolores nihil blanditiis quis quas ratione aliquam
-            hic iure quidem quisquam.
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias
-            veritatis quod tempore animi dolorem doloremque sequi esse
-            perferendis, fuga dolores nihil blanditiis quis quas ratione aliquam
-            hic iure quidem quisquam.
-          </p>
-        </div>
+
+      <div className="bg-white rounded-full w-[50px] h-[50px] hover:bg-purple">
+        <Button typeOfButton="playButton"></Button>
       </div>
+      <Button typeOfButton="instagramButton"></Button>
+      <Footer />
     </div>
   );
 }
