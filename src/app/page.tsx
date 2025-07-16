@@ -1,13 +1,15 @@
+import Footer from "../components/Footer/Footer";
+
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <h1>wefWRgfre</h1>
-        <button className="btn-instagram p-10">hkvkvvh</button>
+        <h1 className="text-red-600">wefWRgfre</h1>
+        <button className="btn-instagram p-10">hkvkvjblkjblkvh</button>
         <p className="font-(family-name:--font-sf-display) text-purple">
           Lorem ipsum dolor sit amet...
         </p>
-        <p>Lorem ipsum dolor sit amet...</p>
+        <p className="text-red-600">Lorem ipsum dolor sit amet...</p>
         <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2 tracking-[-.01em]">
             Get started by editing{" "}
@@ -21,6 +23,23 @@ export default function Home() {
           </li>
         </ol>
       </main>
+      <Footer />
+      <div className="container">
+        <div className="flex flex-col @2xl:flex-row">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias
+            veritatis quod tempore animi dolorem doloremque sequi esse
+            perferendis, fuga dolores nihil blanditiis quis quas ratione aliquam
+            hic iure quidem quisquam.
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias
+            veritatis quod tempore animi dolorem doloremque sequi esse
+            perferendis, fuga dolores nihil blanditiis quis quas ratione aliquam
+            hic iure quidem quisquam.
+          </p>
+        </div>
+      </div>
     </div>
   );
 }

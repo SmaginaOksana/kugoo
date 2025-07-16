@@ -1,12 +1,27 @@
 @layer components {
   .btn-purple {
     @apply font-jost bg-purple rounded-sm-5 text-white border border-solid border-white;
+    &:hover {
+      @apply bg-purple-light;
+    }
   }
   .btn-white {
-    @apply font-jost bg-white rounded-sm-5 text-purple border border-solid border-purple;
+    @apply font-jost bg-white rounded-sm-5 text-gray border border-solid border-gray;
+    &:hover {
+      @apply bg-gray text-purple;
+    }
   }
   .btn-orange {
     @apply font-jost bg-orange rounded-sm-5 text-white border border-solid border-white;
+    &:hover {
+      @apply bg-orange-light;
+    }
+  }
+  .btn-gray {
+    @apply font-jost bg-gray rounded-sm-5 text-light-gray border border-solid border-white;
+    &:hover {
+      @apply bg-purple text-purple border-purple;
+    }
   }
   .btn-youtube {
     @apply font-jost font-medium text-sm text-white rounded-sm-5 bg-red-youtube;
@@ -21,9 +36,51 @@
     @apply font-jost font-medium text-sm text-white rounded-sm-5 bg-linear-to-tr from-yellow-gr from-0% via-red-gr via-51% to-purple-gr to-99%;
   }
   .btn-play-white {
-    @apply bg-white;
+    @apply bg-white w-[136px] h-[136px];
   }
   .btn-play-purple {
+    @apply bg-purple w-[136px] h-[136px];
+  }
+  .btn-next-white {
+    @apply bg-white;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 1em 1em;
+    &:hover {
+      @apply bg-purple;
+    }
+  }
+  .btn-next-purple {
     @apply bg-purple;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 1em 1em;
+    &:hover {
+      @apply bg-white;
+    }
+  }
+  .btn-next-purple-left {
+    @apply .btn-next-purple background-image: url("../../assets/arrowSmallLeftPurple.png");
+    &:hover {
+      @apply background-image: url("../../assets/arrowSmallLeft.png");
+    }
+  }
+  .btn-next-purple-right {
+    @apply .btn-next-purple background-image: url("../../assets/arrowSmallRightPurple.png");
+    &:hover {
+      @apply background-image: url("../../assets/arrowSmallRight.png");
+    }
+  }
+  .btn-next-white-left {
+    @apply .btn-next-white background-image: url("../../assets/arrowSmallLeft.png");
+    &:hover {
+      @apply background-image: url("../../assets/arrowSmallLeftPurple.png");
+    }
+  }
+  .btn-next-white-right {
+    @apply .btn-next-white background-image: url("../../assets/arrowSmallRight.png");
+    &:hover {
+      @apply background-image: url("../../assets/arrowSmallRightPurple.png");
+    }
   }
 }

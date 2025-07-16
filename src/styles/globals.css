@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import "./customClasses/customClasses.css";
+/* @import "./customClasses/customClasses.css"; */
 
 @layer base {
   :root {
@@ -32,17 +32,8 @@
   h3 {
     @apply font-jost font-semibold text-[25px] bg-purple;
   }
-  blueButton {
-    @apply text-white bg-purple border;
-  }
-  lightGrayButton {
-    @apply text-light-gray bg-gray border;
-  }
-  orahgeButton {
-    @apply text-white bg-orange border;
-  }
-  whiteButton {
-    @apply text-purple bg-white border;
+  button {
+    @apply cursor-pointer;
   }
 }
 
@@ -77,10 +68,12 @@
   --container-7xl: 80rem; /* 1280px */
 
   --color-purple: #6f73ee;
+  --color-purple-light: #8185f9;
   --color-light-gray: #5d6c7b;
   --color-gray: #f4f7fb;
   --color-white: #ffffff;
   --color-orange: #f3a712;
+  --color-orange-light: #fab836;
   --color-blue-vk: #4b729f;
   --color-blue-telegram: #039be5;
   --color-red-youtube: #e53935;
