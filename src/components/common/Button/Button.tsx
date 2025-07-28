@@ -8,14 +8,11 @@ function Button({ children, className, typeOfButton, ...props }: IButtonProps) {
   const typesOfButton: {
     [key: string]: string;
   } = {
-    purpleButton:
-      "bg-purple text-white border-white hover:bg-purple-light border border-solid rounded-sm-5",
+    purpleButton: "bg-purple text-white hover:bg-purple-light rounded-sm-5",
     whiteButton:
-      "bg-white text-gray border-gray hover:bg-gray text-purple border border-solid rounded-sm-5",
-    orangeButton:
-      "bg-orange text-white border-white hover:bg-orange-light border border-solid rounded-sm-5",
-    grayButton:
-      "bg-gray text-light-gray border-white hover:bg-purple text-purple border-purple border border-solid rounded-sm-5",
+      "bg-white text-purple hover:bg-purple hover:text-white rounded-sm-5",
+    orangeButton: "bg-orange text-white hover:bg-orange-light rounded-sm-5",
+    grayButton: "bg-gray text-light-gray hover:bg-purple rounded-sm-5",
     youtubeButton: "font-medium text-sm text-white bg-red-youtube rounded-sm-5",
     vkButton: "font-medium text-sm text-white bg-blue-vk rounded-sm-5",
     telegramButton:

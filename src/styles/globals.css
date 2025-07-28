@@ -35,6 +35,9 @@
   button {
     @apply cursor-pointer;
   }
+  hr {
+    @apply bg-light-gray/15 h-[1px] border-none;
+  }
 }
 
 @theme {
