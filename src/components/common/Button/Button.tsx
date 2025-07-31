@@ -4,7 +4,12 @@ interface IButtonProps extends ComponentProps<"button"> {
   typeOfButton: string;
 }
 
-function Button({ children, className, typeOfButton, ...props }: IButtonProps) {
+export function Button({
+  children,
+  className,
+  typeOfButton,
+  ...props
+}: IButtonProps) {
   const typesOfButton: {
     [key: string]: string;
   } = {
@@ -23,16 +28,15 @@ function Button({ children, className, typeOfButton, ...props }: IButtonProps) {
       "w-full h-full border-none bg-[url('/trianglePurple.png')] hover:bg-[url('/triangleWhite.png')] bg-no-repeat bg-center ",
     prevButton: `w-full h-full border-none bg-[url("/arrowSmallLeftPurple.png")] hover:bg-[url("/arrowSmallLeft.png")] bg-no-repeat bg-center `,
     nextButton: `w-full h-full border-none bg-[url("/arrowSmallRightPurple.png")] hover:bg-[url("/arrowSmallRight.png")] bg-no-repeat bg-center `,
+    transparentButton: "bg-transparent",
   };
 
   return (
     <button
-      className={`${typesOfButton[typeOfButton]} ${className} font-jost`}
+      className={`${typesOfButton[typeOfButton]} ${className}`}
       {...props}
     >
       {children}
     </button>
   );
 }
-
-export default Button;

@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <body className={`antialiased`}>{children}</body>
+      <body className={`antialiased ${jost.className}`}>{children}</body>
     </html>
   );
 }
