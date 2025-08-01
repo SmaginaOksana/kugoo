@@ -1,7 +1,6 @@
-import { Button } from "../common/Button/Button";
-import { Input } from "../common/Input/Input";
-import logo from "../../assets/logo.png";
 import Image from "next/image";
+import Link from "next/link";
+
 import {
   buttonsForPurchase,
   buttonsSocialLinks,
@@ -11,6 +10,9 @@ import {
   contactsFirstBlock,
   contactsSecondBlock,
 } from "./content";
+import { Button } from "../common/Button/Button";
+import { Input } from "../common/Input/Input";
+import logo from "../../assets/logo.png";
 
 export function Footer() {
   return (
@@ -43,12 +45,13 @@ export function Footer() {
                 <h5 className="text-dark mb-[17px]">{link.title}</h5>
                 <div className="flex flex-col flex-wrap gap-[10px] h-[110px]">
                   {link.list.map((link, index) => (
-                    <span
+                    <Link
+                      href="#"
                       key={index}
                       className="text-sm mr-[46px] text-light-gray"
                     >
                       {link}
-                    </span>
+                    </Link>
                   ))}
                 </div>
               </div>
@@ -153,10 +156,14 @@ export function Footer() {
           </div>
         </div>
         <hr />
-        <div className="py-[18px] flex justify-between">
+        <div className="py-[18px] flex justify-between items-center">
           <div className="flex gap-[44px]">
-            <a href="#">Реквизиты</a>
-            <a href="#">Политика конфиденциальности</a>
+            <Link href="#" className="text-xs text-light-gray">
+              Реквизиты
+            </Link>
+            <Link href="#" className="text-xs text-light-gray">
+              Политика конфиденциальности
+            </Link>
           </div>
           <div className="flex justify-between gap-[37px]">
             <div className="flex gap-[4px]">
@@ -170,15 +177,16 @@ export function Footer() {
                     src={button.img}
                     alt={button.title}
                     className="m-auto"
+                    width={116}
                   />
                 </Button>
               ))}
             </div>
-            <div className="flex gap-[14px]">
-              Online чат:
+            <div className="flex items-center gap-[14px]">
+              <span className="text-sm text-dark">Online чат:</span>
               {messengersButtons.map((button, index) => (
                 <Button typeOfButton="transparentButton" key={index}>
-                  <Image src={button.img} alt={button.title} />
+                  <Image src={button.img} alt={button.title} width={16} />
                 </Button>
               ))}
             </div>
