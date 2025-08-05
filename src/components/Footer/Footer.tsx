@@ -9,10 +9,11 @@ import {
   links,
   contactsFirstBlock,
   contactsSecondBlock,
+  aboutShopLinks,
 } from "./content";
-import { Button } from "../common/Button/Button";
-import { Input } from "../common/Input/Input";
-import logo from "../../assets/logo.png";
+import { Button } from "@/components/common/Button/Button";
+import { Input } from "@/components/common/Input/Input";
+import logo from "@/assets/logo.png";
 
 export function Footer() {
   return (
@@ -46,11 +47,11 @@ export function Footer() {
                 <div className="flex flex-col flex-wrap gap-[10px] h-[110px]">
                   {link.list.map((link, index) => (
                     <Link
-                      href="#"
+                      href={link.path}
                       key={index}
                       className="text-sm mr-[46px] text-light-gray"
                     >
-                      {link}
+                      {link.link}
                     </Link>
                   ))}
                 </div>
@@ -120,7 +121,7 @@ export function Footer() {
                 key={index}
               >
                 <div className="flex">
-                  <Image src={button.img} alt={button.title} width={30} />
+                  <Image src={button.icon} alt={button.title} width={30} />
                 </div>
                 <div className="flex flex-col">
                   <span className="text-black text-xs font-medium">
@@ -141,7 +142,7 @@ export function Footer() {
                 key={index}
               >
                 <div className="flex h-[20px]">
-                  <Image src={button.img} alt={button.title} width={20} />
+                  <Image src={button.icon} alt={button.title} width={20} />
                 </div>
                 <div className="flex flex-col items-start">
                   <span className="text-black text-xs font-medium">
@@ -158,12 +159,15 @@ export function Footer() {
         <hr />
         <div className="py-[18px] flex justify-between items-center">
           <div className="flex gap-[44px]">
-            <Link href="#" className="text-xs text-light-gray">
-              Реквизиты
-            </Link>
-            <Link href="#" className="text-xs text-light-gray">
-              Политика конфиденциальности
-            </Link>
+            {aboutShopLinks.map((link, index) => (
+              <Link
+                href={link.path}
+                className="text-xs text-light-gray"
+                key={index}
+              >
+                {link.link}
+              </Link>
+            ))}
           </div>
           <div className="flex justify-between gap-[37px]">
             <div className="flex gap-[4px]">
@@ -174,21 +178,30 @@ export function Footer() {
                   className="w-[34px]"
                 >
                   <Image
-                    src={button.img}
+                    src={button.icon}
                     alt={button.title}
                     className="m-auto"
-                    width={116}
+                    width={22}
                   />
                 </Button>
               ))}
             </div>
             <div className="flex items-center gap-[14px]">
               <span className="text-sm text-dark">Online чат:</span>
-              {messengersButtons.map((button, index) => (
-                <Button typeOfButton="transparentButton" key={index}>
-                  <Image src={button.img} alt={button.title} width={16} />
-                </Button>
-              ))}
+              {messengersButtons.map((button, index) => {
+                const { icon: Icon, activeColor } = button;
+
+                return (
+                  <Button typeOfButton="transparentButton" key={index}>
+                    <Icon
+                      className="messengersIconsColor text-light-gray w-[16px]"
+                      style={{
+                        "--icon-active-color": activeColor,
+                      }}
+                    />
+                  </Button>
+                );
+              })}
             </div>
           </div>
         </div>

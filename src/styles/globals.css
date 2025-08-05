@@ -44,6 +44,12 @@
   a {
     @apply hover:underline;
   }
+  .messengersIconsColor {
+    fill: currentColor;
+  }
+  .messengersIconsColor:hover {
+    fill: var(--icon-active-color);
+  }
 }
 
 @theme {
@@ -85,6 +91,8 @@
   --color-yellow-gr: #ffc107;
   --color-red-gr: #f44336;
   --color-purple-gr: #9c27b0;
+  --color-pink-viber: #8e24aa;
+  --color-green-whatsapp: #4caf50;
 
   --text-xs: 0.75rem; /* (12px) */
   --text-xs--line-height: calc(1 / 0.75);

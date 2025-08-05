@@ -1,41 +1,81 @@
-import telegramColor from "../../assets/telegramColor.png";
-import telegram from "../../assets/telegram.png";
-import whatsapp from "../../assets/whatsapp.png";
-import viber from "../../assets/viber.png";
-import instagramColor from "../../assets/instagramColor.png";
-import vkColor from "../../assets/vkColor.png";
-import youtubeColor from "../../assets/youtubeColor.png";
-import googlePlay from "../../assets/googlePlay.png";
-import apple from "../../assets/apple.png";
-import googlePay from "../../assets/googlePay.png";
-import applePay from "../../assets/applePay.png";
-import visa from "../../assets/visa.png";
-import mastercard from "../../assets/mastercard.png";
-import maestro from "../../assets/maestro.png";
-import qiwi from "../../assets/qiwi.png";
-import webmoney from "../../assets/webmoney.png";
+import telegramIcon from "@/assets/social/telegramIcon.svg";
+import telegramColorIcon from "@/assets/social/telegramColor.png";
+import whatsappIcon from "@/assets/social/whatsappIcon.svg";
+import viberIcon from "@/assets/social/viberIcon.svg";
+import instagramColorIcon from "@/assets/social/instagramColor.png";
+import vkColorIcon from "@/assets/social/vkColor.png";
+import youtubeColorIcon from "@/assets/social/youtubeColor.png";
+import googlePlayIcon from "@/assets/googlePlay.png";
+import appleIcon from "@/assets/apple.png";
+import googlePayIcon from "@/assets/waysToPay/googlePay.png";
+import applePayIcon from "@/assets/waysToPay/applePay.png";
+import visaIcon from "@/assets/waysToPay/visa.png";
+import mastercardIcon from "@/assets/waysToPay/mastercard.png";
+import maestroIcon from "@/assets/waysToPay/maestro.png";
+import qiwiIcon from "@/assets/waysToPay/qiwi.png";
+import webmoneyIcon from "@/assets/waysToPay/webmoney.png";
 
+export const aboutShopLinks = [
+  { path: "#", link: "Реквизиты" },
+  { path: "#", link: "Политика конфиденциальности" },
+];
 export const links = [
   {
     title: "Каталог товаров",
     list: [
-      "Электросамокаты",
-      "Электроскутеры",
-      "Электровелосипеды",
-      "Электровелосипеды",
+      {
+        path: "#",
+        link: "Электросамокаты",
+      },
+      {
+        path: "#",
+        link: "Электроскутеры",
+      },
+      {
+        path: "#",
+        link: "Электровелосипеды",
+      },
+      {
+        path: "#",
+        link: "Электровелосипеды",
+      },
     ],
   },
   {
     title: "Покупателям",
     list: [
-      "Сервисный центр",
-      "Доставка и оплата",
-      "Рассрочка",
-      "Тест-драйв",
-      "Блог",
-      "Сотрудничество",
-      "Контакты",
-      "Акции",
+      {
+        path: "#",
+        link: "Сервисный центр",
+      },
+      {
+        path: "#",
+        link: "Доставка и оплата",
+      },
+      {
+        path: "#",
+        link: "Рассрочка",
+      },
+      {
+        path: "#",
+        link: "Тест-драйв",
+      },
+      {
+        path: "#",
+        link: "Блог",
+      },
+      {
+        path: "#",
+        link: "Сотрудничество",
+      },
+      {
+        path: "#",
+        link: "Контакты",
+      },
+      {
+        path: "#",
+        link: "Акции",
+      },
     ],
   },
 ];
@@ -73,12 +113,12 @@ export const contactsSecondBlock = [
 
 export const buttonsForPurchase = [
   {
-    img: googlePlay,
+    icon: googlePlayIcon,
     title: "ДОСТУПНО НА",
     text: "Google Play",
   },
   {
-    img: apple,
+    icon: appleIcon,
     title: "Загрузите в",
     text: "App Store",
   },
@@ -86,22 +126,22 @@ export const buttonsForPurchase = [
 
 export const buttonsSocialLinks = [
   {
-    img: vkColor,
+    icon: vkColorIcon,
     title: "Вконтакте",
     text: 3300,
   },
   {
-    img: instagramColor,
+    icon: instagramColorIcon,
     title: "Instagram",
     text: 10602,
   },
   {
-    img: youtubeColor,
+    icon: youtubeColorIcon,
     title: "YouTube",
     text: 3603,
   },
   {
-    img: telegramColor,
+    icon: telegramColorIcon,
     title: "Telegram",
     text: 432,
   },
@@ -109,46 +149,49 @@ export const buttonsSocialLinks = [
 
 export const waysToPayButtons = [
   {
-    img: googlePay,
+    icon: googlePayIcon,
     title: "googlePay",
   },
   {
-    img: applePay,
+    icon: applePayIcon,
     title: "applePay",
   },
   {
-    img: visa,
+    icon: visaIcon,
     title: "visa",
   },
   {
-    img: mastercard,
+    icon: mastercardIcon,
     title: "mastercard",
   },
   {
-    img: maestro,
+    icon: maestroIcon,
     title: "maestro",
   },
   {
-    img: webmoney,
+    icon: webmoneyIcon,
     title: "webmoney",
   },
   {
-    img: qiwi,
+    icon: qiwiIcon,
     title: "qiwi",
   },
 ];
 
 export const messengersButtons = [
   {
-    img: viber,
+    icon: viberIcon,
+    activeColor: "var(--color-pink-viber)",
     title: "viber",
   },
   {
-    img: whatsapp,
+    icon: whatsappIcon,
+    activeColor: "var(--color-green-whatsapp)",
     title: "whatsapp",
   },
   {
-    img: telegram,
+    icon: telegramIcon,
+    activeColor: "var(--color-blue-telegram)",
     title: "telegram",
   },
 ];
