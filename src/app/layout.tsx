@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { roboto, jost, sfText, sfDisplay } from "../styles/fonts/fonts";
-import "../styles/globals.css";
+import "@/styles/globals.css";
+import { Header } from "@/components/Header/Header";
+import { Footer } from "@/components/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "Kugoo",
@@ -14,7 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <body className={`antialiased ${jost.className}`}>{children}</body>
+      <body className={`antialiased ${jost.className}`}>
+        <Header />
+        <main>{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }

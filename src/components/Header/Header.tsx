@@ -5,8 +5,8 @@ import { Button } from "@/components/common/Button/Button";
 import { Input } from "@/components/common/Input/Input";
 import { messengersButtons, userButtons, dropdown, links } from "./content";
 import logo from "@/assets/logo.png";
-import search from "@/assets/search.png";
-import Plus from "@/assets/plus.svg";
+import searchIcon from "@/assets/searchIcon.png";
+import PlusIcon from "@/assets/plusIcon.svg";
 
 export function Header() {
   return (
@@ -39,7 +39,7 @@ export function Header() {
           <span className="text-xs font-medium text-dark">
             +7 (800) 505-54-61
           </span>
-          <Plus className="w-[18px] stroke-light-gray fill-white hover:fill-light-gray hover:stroke-white cursor-pointer" />
+          <PlusIcon className="w-[18px] stroke-light-gray fill-white hover:fill-light-gray hover:stroke-white cursor-pointer" />
         </div>
       </div>
       <hr />
@@ -67,7 +67,7 @@ export function Header() {
           </select>
           <Input placeholder="Искать самокат KUGO" className="w-full" />
           <div className="bg-purple w-[50px] h-[37px] flex items-center justify-center">
-            <Image src={search} alt="search" width={16} />
+            <Image src={searchIcon} alt="search" width={16} />
           </div>
         </div>
         <div className="flex gap-[25px]">

@@ -1,19 +1,19 @@
 import telegramIcon from "@/assets/social/telegramIcon.svg";
-import telegramColorIcon from "@/assets/social/telegramColor.png";
+import telegramColorIcon from "@/assets/social/telegramColorIcon.png";
 import whatsappIcon from "@/assets/social/whatsappIcon.svg";
 import viberIcon from "@/assets/social/viberIcon.svg";
-import instagramColorIcon from "@/assets/social/instagramColor.png";
-import vkColorIcon from "@/assets/social/vkColor.png";
-import youtubeColorIcon from "@/assets/social/youtubeColor.png";
-import googlePlayIcon from "@/assets/googlePlay.png";
-import appleIcon from "@/assets/apple.png";
-import googlePayIcon from "@/assets/waysToPay/googlePay.png";
-import applePayIcon from "@/assets/waysToPay/applePay.png";
-import visaIcon from "@/assets/waysToPay/visa.png";
-import mastercardIcon from "@/assets/waysToPay/mastercard.png";
-import maestroIcon from "@/assets/waysToPay/maestro.png";
-import qiwiIcon from "@/assets/waysToPay/qiwi.png";
-import webmoneyIcon from "@/assets/waysToPay/webmoney.png";
+import instagramColorIcon from "@/assets/social/instagramColorIcon.png";
+import vkColorIcon from "@/assets/social/vkColorIcon.png";
+import youtubeColorIcon from "@/assets/social/youtubeColorIcon.png";
+import googlePlayIcon from "@/assets/googlePlayIcon.png";
+import appleIcon from "@/assets/appleIcon.png";
+import googlePayIcon from "@/assets/waysToPay/googlePayIcon.png";
+import applePayIcon from "@/assets/waysToPay/applePayIcon.png";
+import visaIcon from "@/assets/waysToPay/visaIcon.png";
+import mastercardIcon from "@/assets/waysToPay/mastercardIcon.png";
+import maestroIcon from "@/assets/waysToPay/maestroIcon.png";
+import qiwiIcon from "@/assets/waysToPay/qiwiIcon.png";
+import webmoneyIcon from "@/assets/waysToPay/webmoneyIcon.png";
 
 export const aboutShopLinks = [
   { path: "#", link: "Реквизиты" },

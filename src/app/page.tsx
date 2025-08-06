@@ -1,11 +1,9 @@
-import { Footer } from "../components/Footer/Footer";
-import { Header } from "../components/Header/Header";
+import { CardProduct } from "@/components/Main/CardProduct/CardProduct";
 
 export default function Home() {
   return (
-    <div>
-      <Header />
-      <Footer />
-    </div>
+    <>
+      <CardProduct />
+    </>
   );
 }
