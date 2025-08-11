@@ -16,7 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <body className={`antialiased ${jost.className}`}>
+      <body
+        className={`antialiased ${jost.variable} ${roboto.variable} ${sfDisplay.variable} ${sfText.variable}`}
+      >
         <Header />
         <main>{children}</main>
         <Footer />

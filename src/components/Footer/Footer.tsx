@@ -32,8 +32,8 @@ export function Footer() {
           />
         </form>
         <Button
-          typeOfButton="whiteButton"
-          className="px-[25px] py-[15px] border w-[148px]"
+          typeOfButton="white"
+          className="px-[25px] py-[15px] border border-white w-[148px]"
         >
           Подписаться
         </Button>
@@ -62,7 +62,7 @@ export function Footer() {
             <div className="flex justify-between items-center mb-[17px]">
               <h5 className="text-dark">Контакты</h5>
               <Button
-                typeOfButton="transparentButton"
+                typeOfButton="transparent"
                 className="text-purple text-xs font-medium"
               >
                 Заказать звонок
@@ -116,7 +116,7 @@ export function Footer() {
           <div className="flex gap-[10px]">
             {buttonsForPurchase.map((button, index) => (
               <Button
-                typeOfButton="whiteButton"
+                typeOfButton="white"
                 className="h-[55px] py-[8px] px-[10px] flex gap-[7px]"
                 key={index}
               >
@@ -137,7 +137,7 @@ export function Footer() {
           <div className="flex gap-[10px]">
             {buttonsSocialLinks.map((button, index) => (
               <Button
-                typeOfButton="whiteButton"
+                typeOfButton="white"
                 className="h-[55px] w-[123px] py-[8px] px-[10px] flex items-center gap-[11px]"
                 key={index}
               >
@@ -172,11 +172,7 @@ export function Footer() {
           <div className="flex justify-between gap-[37px]">
             <div className="flex gap-[4px]">
               {waysToPayButtons.map((button, index) => (
-                <Button
-                  typeOfButton="whiteButton"
-                  key={index}
-                  className="w-[34px]"
-                >
+                <Button typeOfButton="white" key={index} className="w-[34px]">
                   <Image
                     src={button.icon}
                     alt={button.title}
@@ -192,9 +188,9 @@ export function Footer() {
                 const { icon: Icon, activeColor } = button;
 
                 return (
-                  <Button typeOfButton="transparentButton" key={index}>
+                  <Button typeOfButton="transparent" key={index}>
                     <Icon
-                      className="messengersIconsColor text-light-gray w-[16px]"
+                      className="iconsChangeColor text-light-gray w-[16px]"
                       style={{
                         "--icon-active-color": activeColor,
                       }}

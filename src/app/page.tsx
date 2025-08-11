@@ -1,9 +1,9 @@
-import { CardProduct } from "@/components/Main/CardProduct/CardProduct";
+import { ProductsBlock } from "@/components/Main/ProductsBlock/ProductsBlock";
 
 export default function Home() {
   return (
     <>
-      <CardProduct />
+      <ProductsBlock />
     </>
   );
 }

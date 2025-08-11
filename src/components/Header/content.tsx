@@ -32,7 +32,6 @@ export const userButtons = [
   },
   {
     icon: shoppingCartIcon,
-
     text: "Корзина",
   },
 ];

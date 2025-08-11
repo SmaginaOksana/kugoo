@@ -23,9 +23,9 @@ export function Header() {
               const { icon: Icon, activeColor } = button;
 
               return (
-                <Button typeOfButton="transparentButton" key={index}>
+                <Button typeOfButton="transparent" key={index}>
                   <Icon
-                    className="messengersIconsColor text-light-gray w-[11px]"
+                    className="iconsChangeColor text-light-gray w-[11px]"
                     style={{
                       "--icon-active-color": activeColor,
                     }}
@@ -48,7 +48,7 @@ export function Header() {
           <Image src={logo} alt="logo" width={116} />
         </div>
         <Button
-          typeOfButton="purpleButton"
+          typeOfButton="purple"
           className="py-[9px] px-[30px] mr-[20px] font-medium"
         >
           Каталог
@@ -76,7 +76,7 @@ export function Header() {
             return (
               <Button
                 key={index}
-                typeOfButton="transparentButton"
+                typeOfButton="transparent"
                 className={`${button.text && `flex gap-[10px]`}`}
               >
                 <Icon className="text-dark hover:text-purple w-[20px] h-[20px]" />
