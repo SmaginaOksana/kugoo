@@ -16,7 +16,7 @@ export enum statusOfProduct {
   "none" = "",
 }
 
-export const buttons = [
+export const navButtons = [
   "Хиты продаж",
   "Для города",
   "Для взрослых",

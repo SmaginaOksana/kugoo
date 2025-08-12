@@ -1,9 +1,11 @@
+"use client";
+
+import { useState } from "react";
+
 import { CardProduct } from "@/components/Main/ProductsBlock/components/CardProduct/CardProduct";
-import {
-  IProductsFields,
-  buttons,
-} from "@/components/Main/ProductsBlock/content";
+import { IProductsFields } from "@/components/Main/ProductsBlock/content";
 import { Button } from "@/components/common/Button/Button";
+import { NavButtons } from "@/components/Main/ProductsBlock/components/NavButtons/NavButtons";
 
 const array: IProductsFields[] = [
   {
@@ -97,20 +99,14 @@ const array: IProductsFields[] = [
 ];
 
 export function ProductsBlock() {
+  const [activeTab, setActiveTab] = useState("Хиты продаж");
+
   return (
     <div className="@container m-auto px-[165px] mb-[110px] flex flex-col gap-[50px]">
       <div className="flex justify-between items-center">
         <h2>ЭЛЕКТРОСАМОКАТЫ</h2>
         <div className="flex gap-[10px]">
-          {buttons.map((button, index) => (
-            <Button
-              typeOfButton="gray"
-              className="px-[20px] py-[10px]"
-              key={index}
-            >
-              {button}
-            </Button>
-          ))}
+          <NavButtons activeTab={activeTab} setActiveTab={setActiveTab} />
         </div>
       </div>
       <div className="flex justify-between flex-wrap gap-[30px]">

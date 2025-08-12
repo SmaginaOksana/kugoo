@@ -116,7 +116,7 @@ export function Footer() {
           <div className="flex gap-[10px]">
             {buttonsForPurchase.map((button, index) => (
               <Button
-                typeOfButton="white"
+                typeOfButton="transparent"
                 className="h-[55px] py-[8px] px-[10px] flex gap-[7px]"
                 key={index}
               >
@@ -137,7 +137,7 @@ export function Footer() {
           <div className="flex gap-[10px]">
             {buttonsSocialLinks.map((button, index) => (
               <Button
-                typeOfButton="white"
+                typeOfButton="transparent"
                 className="h-[55px] w-[123px] py-[8px] px-[10px] flex items-center gap-[11px]"
                 key={index}
               >
@@ -170,16 +170,19 @@ export function Footer() {
             ))}
           </div>
           <div className="flex justify-between gap-[37px]">
-            <div className="flex gap-[4px]">
+            <div className="flex items-center gap-[4px]">
               {waysToPayButtons.map((button, index) => (
-                <Button typeOfButton="white" key={index} className="w-[34px]">
+                <div
+                  key={index}
+                  className="w-[34px] bg-white h-[24px] flex items-center rounded-sm-5"
+                >
                   <Image
                     src={button.icon}
                     alt={button.title}
                     className="m-auto"
                     width={22}
                   />
-                </Button>
+                </div>
               ))}
             </div>
             <div className="flex items-center gap-[14px]">

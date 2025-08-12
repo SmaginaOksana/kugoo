@@ -108,13 +108,13 @@ export function CardProduct({
           <div className="flex gap-[13px]">
             <Button
               typeOfButton="transparent"
-              className="flex justify-center items-center border border-lightest-gray w-[40px] h-[40px] rounded-full hover:bg-lightest-gray"
+              className="flex justify-center items-center border border-lightest-gray w-[40px] h-[40px] rounded-full hover:bg-lightest-gray active:bg-white"
             >
               <ShoppingCartIcon className="text-light-gray hover:text-purple w-[20px] h-[20px]" />
             </Button>
             <Button
               typeOfButton="transparent"
-              className="flex justify-center items-center border border-lightest-gray w-[40px] h-[40px] rounded-full hover:bg-lightest-gray"
+              className="flex justify-center items-center border border-lightest-gray w-[40px] h-[40px] rounded-full hover:bg-lightest-gray active:bg-white"
             >
               <HeartIcon className="text-light-gray hover:text-purple w-[20px] h-[20px]" />
             </Button>
